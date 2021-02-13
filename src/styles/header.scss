@@ -20,17 +20,7 @@
     display: block;
     left: 80%;
     top: 0;
-    height: 100%;
-
-    .close {
-        position: sticky;
-        top: 0;
-        left: 0;
-    }
-}
-
-.sidebar {
-    padding: 2rem;
+    width: 2.35rem;
 }
 
 @include max635px {
@@ -42,16 +32,19 @@
 
         &-content {
             flex-direction: column;
+
+            p {
+                width: 100%;
+            }
         }
     }
     .header {
         &-sticky {
+            width: 4.5rem;
             left: 88%;
-            top: 2.5%;
-            .close {
-                position: absolute;
-            }
+            top: 35%;
         }
+
         &-title {
             margin: 10rem 0;
         }
@@ -63,16 +56,6 @@
 
         & li {
             margin-right: 5rem;
-        }
-    }
-}
-
-@include max375px {
-    .about {
-        &-content {
-            & p {
-                width: 100%;
-            }
         }
     }
 }

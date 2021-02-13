@@ -1,5 +1,4 @@
 .footer {
-    position: relative;
     & p {
         width: 65%;
     }
@@ -14,13 +13,13 @@
 }
 
 @include max635px {
-   .footer {
-       & p {
-           width: 100%;
-       }
+    .footer {
+        & p {
+            width: 100%;
+        }
 
-       &-link {
-           display: inline-block;
-       }
-   }
+        &-link {
+            display: inline-block;
+        }
+    }
 }

@@ -138,9 +138,11 @@ html {
 }
 
 .close {
-    width: 2.35rem;
+    width: 100%;
     padding: 15px;
-    &:after, &:before {
+
+    &:after,
+    &:before {
         content: "";
         position: absolute;
         top: 50%;
