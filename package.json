@@ -1,0 +1,43 @@
+{
+    "name": "thebestsaite",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "start": "cross-env NODE_ENV=dev webpack-dev-server --open webpack --mode development --watch",
+        "build": "cross-env NODE_ENV=production webpack --mode production"
+    },
+    "author": "SanjiAndSabit",
+    "license": "ISC",
+    "dependencies": {
+        "cross-env": "^5.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/polyfill": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "autoprefixer": "^9.6.0",
+        "babel-eslint": "~8.0.1",
+        "babel-loader": "^8.0.6",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.2",
+        "css-loader": "^3.6.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^4.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.7.0",
+        "node-sass": "^5.0.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "^3.0.0",
+        "postcss-scss": "^3.0.4",
+        "sass": "^1.32.5",
+        "sass-loader": "^10.1.1",
+        "style-loader": "^2.0.0",
+        "terser-webpack-plugin": "^2.3.2",
+        "webpack": "^4.33.0",
+        "webpack-cli": "^3.3.4",
+        "webpack-dev-server": "^3.7.1"
+    }
+}

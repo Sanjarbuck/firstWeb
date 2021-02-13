@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(177, 177, 177, .7);
+    &:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .1;
+        background-image: url("../assets/icons/giphy.gif");
+    }
+}
+
+.container {
+    padding-right: 25rem;
+    padding-left: 9rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.over-hideX {
+    overflow-x: hidden;
+}
+
+@include max635px {
+    .container {
+        padding: 0 4.5rem;
+        font-size: 4.3rem;
+    }
+}

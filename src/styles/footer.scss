@@ -1,0 +1,26 @@
+.footer {
+    position: relative;
+    & p {
+        width: 65%;
+    }
+}
+
+.sub-title {
+    justify-content: space-between;
+}
+
+.next-link {
+    display: block;
+}
+
+@include max635px {
+   .footer {
+       & p {
+           width: 100%;
+       }
+
+       &-link {
+           display: inline-block;
+       }
+   }
+}

@@ -1,0 +1,21 @@
+@import "common.scss";
+@import "media.scss";
+@import "typography.scss";
+@import "layout.scss";
+@import "header.scss";
+@import "text-animation.scss";
+@import "gallery.scss";
+@import "portfolio.scss";
+@import "footer.scss";
+
+::-webkit-scrollbar {
+    width: 12.5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(64, 64, 64, .8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(135, 134, 134, .8);
+}

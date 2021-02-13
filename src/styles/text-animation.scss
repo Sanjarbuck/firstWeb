@@ -1,0 +1,83 @@
+.text-opacity-up {
+    span {
+        animation: text-opacity-up ease-in-out;
+    }
+}
+
+.text-opacity-up-parent {
+    animation: text-opacity-up-parent ease-in-out;
+}
+
+.line-block {
+    &:after {
+        animation: fill-line .7s ease-in-out;
+    }
+}
+
+.close {
+    animation: scale-close 1.5s ease-in-out;
+}
+
+.header-duration {
+    span {
+        animation-duration: .7s;
+    }
+}
+
+.h1-duration {
+    animation-duration: 1s;
+}
+
+.p-duration{
+    animation-duration: 1.2s;
+}
+
+.sidebar-duration {
+    animation-duration: 1.4s;
+}
+
+@keyframes fill-line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes text-opacity-up {
+    0% {
+        opacity: 0;
+        transform: translateY(75%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-opacity-up-parent {
+    0% {
+        opacity: 0;
+        transform: translateY(75%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale-close {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

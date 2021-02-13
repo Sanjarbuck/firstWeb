@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "FounderG";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/FoundersGrotesk-Regular.woff2") format("woff2"),
+    url("../assets/fonts/FoundersGrotesk-Regular.woff") format("woff"),
+    url("../assets/fonts/FoundersGrotesk-Regular.ttf") format("opentype"),
+    url("../assets/fonts/FoundersGrotesk-Regular.eot") format("opentype");
+}
+
+body {
+    font-family: FounderG, Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: calc(16 * 100vw / 1440);
+}
+
+.h1 {
+    line-height: 0.8;
+    font-size: 11rem;
+    font-weight: 500;
+}
+
+.fs1-15 {
+    font-size: 1.35rem;
+}
+
+.mb40 {
+    margin-bottom: 4rem;
+}
+
+.mb20 {
+    margin-bottom: 2rem;
+}
+
+.mt150 {
+    margin-top: 15rem;
+}
+
+.mt50 {
+    margin-top: 5rem;
+}
+
+.mt05 {
+    margin-top: 0.5rem;
+}
+
+.line-block {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+    }
+
+    &--top {
+        &:after {
+            bottom: auto;
+            top: 0;
+        }
+    }
+}
+
+.line-effect {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: .05em;
+        background-color: #333;
+        transition: width .3s linear;
+    }
+
+    &:after {
+        right: 0;
+        left: auto;
+        width: 100%;
+        transition: width .7s linear 0.1s;
+    }
+
+    &:hover {
+        &:after {
+            width: 0;
+            transition: width .3s linear;
+        }
+
+        &:before {
+            width: 100%;
+            transition: width .7s linear 0.1s;
+        }
+    }
+}
+
+.text-run-up {
+    position: relative;
+    overflow: hidden;
+    line-height: 1.2;
+
+    span {
+        display: inline-block;
+        transition: transform 0.5s cubic-bezier(.6, .13, .38, .56);
+    }
+
+    div:last-child {
+        position: absolute;
+    }
+
+    .text-run-up-faster {
+        transition: transform 0.35s cubic-bezier(.6, .13, .38, .56);
+    }
+
+    &:hover {
+        span {
+            transform: translateY(-100%);
+        }
+
+        div:last-child {
+            span {
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+}
+
+.close {
+    width: 2.35rem;
+    padding: 15px;
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+}
+
+@include max635px {
+    .mb20 {
+        margin-bottom: 3.5rem;
+    }
+
+    .fs1-15 {
+        font-size: 3.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close {
+        width: 5rem;
+    }
+}
+
+@include max375px {
+    html {
+        font-size: calc(18 * 100vw / 1440);
+    }
+}
