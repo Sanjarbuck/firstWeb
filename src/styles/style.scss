@@ -8,14 +8,16 @@
 @import "portfolio.scss";
 @import "footer.scss";
 
-::-webkit-scrollbar {
-    width: 12.5px;
-}
+@media (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 12.5px;
+    }
 
-::-webkit-scrollbar-track {
-    background-color: rgba(64, 64, 64, .8);
-}
+    ::-webkit-scrollbar-track {
+        background-color: rgba(64, 64, 64, .8);
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color: rgba(135, 134, 134, .8);
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(135, 134, 134, .8);
+    }
 }
