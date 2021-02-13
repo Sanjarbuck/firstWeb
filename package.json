@@ -8,13 +8,16 @@
         "build": "cross-env NODE_ENV=production webpack --mode production"
     },
     "author": "SanjiAndSabit",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sanjarbuck/firstWeb"
+    },
     "license": "ISC",
     "dependencies": {
         "cross-env": "^5.2.0"
     },
     "devDependencies": {
         "@babel/core": "^7.4.5",
-        "@babel/polyfill": "^7.4.4",
         "@babel/preset-env": "^7.4.5",
         "autoprefixer": "^9.6.0",
         "babel-eslint": "~8.0.1",
