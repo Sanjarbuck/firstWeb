@@ -23,7 +23,10 @@
         </div>
         <h1 class="header-title h1 mt50 text-opacity-up-parent h1-duration">Stokkøya House</h1>
         <div class="header-sticky">
-            <a aria-label="Get back" class="close" href="/"></a>
+            <a aria-label="Get back" class="close" href="/">
+                <span class="close_line_1"></span>
+                <span class="close_line_2"></span>
+            </a>
         </div>
     </header>
 </div>
@@ -44,26 +47,38 @@
                 <li class="text-opacity-up-parent sidebar-duration">Client: Personal</li>
             </ul>
         </section>
-        <section class="gallery mt150">
+        <section class="mt150">
             <h2 class="visually-hidden">Examples</h2>
-            <video autoplay
-                   class="lazy"
-                   data-src="./sh1.mp4"
-                   loop
-                   type="video/mp4"></video>
-            <video autoplay
-                   class="lazy"
-                   data-src="./sh2.mp4"
-                   loop
-                   type="video/mp4"></video>
-            <img alt="Example video player"
-                 class="lazy"
-                 data-src="./sh3.jpg"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
-            <img alt="Example footer site"
-                 class="lazy"
-                 data-src="./sh6.jpg"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+            <ul class="gallery">
+                <li class="gallery-list">
+                    <video  data-src="./sh1.mp4"
+                            src="./sh1.mp4"
+                            type="video/mp4"
+                            muted
+                            autoplay
+                            playsinline
+                            loop>
+                    </video>
+                </li>
+                <li class="gallery-list">
+                    <video  data-src="./sh2.mp4"
+                            src="./sh2.mp4"
+                            type="video/mp4"
+                            muted
+                            autoplay
+                            playsinline
+                            loop>
+                    </video>
+                </li>
+                <li class="gallery-list">
+                    <img    alt="Example video player"
+                            src="./sh3.jpg"
+                </li>
+                <li class="gallery-list">
+                    <img    alt="Example footer site"
+                            src="./sh6.jpg"
+                </li>
+            </ul>
         </section>
     </div>
 </main>
@@ -77,6 +92,5 @@
         <span>©2021</span>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 </body>
 </html>

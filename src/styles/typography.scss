@@ -139,9 +139,11 @@ html {
 
 .close {
     width: 100%;
-    padding: 10px;
-    &:after,
-    &:before {
+    height: 100%;
+    padding: 49%;
+    display: inline-block;
+
+    span {
         content: "";
         position: absolute;
         top: 50%;
@@ -152,11 +154,11 @@ html {
         background: #000;
     }
 
-    &:after {
+    &_line_1 {
         transform: rotate(-45deg);
     }
 
-    &:before {
+    &_line_2 {
         transform: rotate(45deg);
     }
 }

@@ -16,7 +16,6 @@ if (!isMobile) {
             selector = el
             imageElement = el.querySelector(".img-hover")
             isRun = true
-            console.log(navigator)
         })
         el.addEventListener("mouseleave", () => {
             el.classList.remove("show")
@@ -30,11 +29,5 @@ if (!isMobile) {
             const y = ev.pageY - selector.offsetTop - selector.offsetHeight / 2 - imageElement.offsetHeight / 2
             imageElement.style.transform = `translate(${x}px, ${y}px)`
         }
-    })
-}
-
-if (document.querySelector('.lazy')) {
-    const lazyLoadInstance = new LazyLoad({
-        threshold: 30
     })
 }

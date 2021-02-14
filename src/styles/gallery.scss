@@ -1,18 +1,8 @@
 .gallery {
     line-height: 0;
-    width: 100%;
 
-    video, img {
-        display: block;
+    &-list {
+        width: 100%;
         margin-bottom: 8rem;
-        max-width: 100%;
-        opacity: 0;
-        transition: transform 1.2s linear, opacity 1s linear;
-        transform: translateX(75%) translateY(-20%) scale(1.1);
     }
-}
-
-.gallery .loaded {
-    opacity: 1;
-    transform: translateX(0) translateY(0) scale(1);
 }

@@ -23,7 +23,10 @@
         </div>
         <h1 class="header-title h1 mt50 text-opacity-up-parent h1-duration">Adidas Y3</h1>
         <div class="header-sticky">
-            <a aria-label="Get back" class="close" href="/"></a>
+            <a aria-label="Get back" class="close" href="/">
+                <span class="close_line_1"></span>
+                <span class="close_line_2"></span>
+            </a>
         </div>
     </header>
 </div>
@@ -47,26 +50,36 @@
                 <li class="text-opacity-up-parent sidebar-duration">Client: Personal</li>
             </ul>
         </section>
-        <section class="gallery mt150">
+        <section class="mt150">
             <h2 class="visually-hidden">Examples</h2>
-            <video class="lazy"
-                   autoplay
-                   data-src="./adidas1.mp4"
-                   loop
-                   type="video/mp4"></video>
-            <video class="lazy"
-                   autoplay
-                   data-src="./adidas2.mp4"
-                   loop
-                   type="video/mp4"></video>
-            <img alt="Example collection section"
-                 class="lazy"
-                 data-src="./adidas1.jpg"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
-            <img alt="Section shopping view"
-                 class="lazy"
-                 data-src="./adidas2.jpg"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+            <ul class="gallery">
+                <li class="gallery-list">
+                    <video src="./adidas1.mp4"
+                           type="video/mp4"
+                           muted
+                           autoplay
+                           playsinline
+                           loop>
+                    </video>
+                </li>
+                <li class="gallery-list">
+                    <video src="./adidas2.mp4"
+                           type="video/mp4"
+                           muted
+                           autoplay
+                           playsinline
+                           loop>
+                    </video>
+                </li>
+                <li class="gallery-list">
+                    <img alt="Example collection section"
+                         src="./adidas1.jpg"
+                </li>
+                <li class="gallery-list">
+                    <img alt="Section shopping view"
+                         src="./adidas2.jpg"
+                </li>
+            </ul>
         </section>
     </div>
 </main>
@@ -80,6 +93,5 @@
         <span>©2021</span>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 </body>
 </html>
