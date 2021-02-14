@@ -35,6 +35,6 @@ if (!isMobile) {
 
 if (document.querySelector('.lazy')) {
     const lazyLoadInstance = new LazyLoad({
-        threshold: 30
+        threshold: 25
     })
 }
