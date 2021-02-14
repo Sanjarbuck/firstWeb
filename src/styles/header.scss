@@ -19,7 +19,7 @@
     position: absolute;
     display: block;
     left: 80%;
-    top: 0;
+    top: 10px;
     width: 2.35rem;
 }
 
@@ -40,9 +40,9 @@
     }
     .header {
         &-sticky {
-            width: 7.5rem;
-            left: 85%;
-            top: 40%;
+            width: 6rem;
+            left: 88%;
+            top: 45%;
         }
 
         &-title {
@@ -53,6 +53,7 @@
         margin: 7.5rem 0 0 0;
         display: flex;
         justify-content: flex-start;
+        padding: 0 1rem;
 
         & li {
             margin-right: 5rem;
